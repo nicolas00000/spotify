@@ -1,0 +1,253 @@
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto' , sans-serif;
+}
+
+ul, li, a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    height: 100vh;    
+}
+
+.header{
+    background-color: black;
+    height: 82px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-topo{
+    width: 70%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo{
+    width: 140px;
+    object-fit: cover;
+}
+
+
+.box-links{
+    justify-content: space-around;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    color:white;
+}
+
+.divisoria{
+    background-color: rgb(121, 115, 115);
+    width: 1px;
+    display: block;
+    height: 20px;
+    margin:0px 15px;
+}
+
+
+.links-login{
+    display:flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.links-login li a {
+    color: rgb(121, 115, 115);
+}
+
+a{
+    color:white;
+}
+
+nav ul li a:hover{
+    color:#1ed760 !important;
+    cursor:pointer;
+}
+
+.imagem-body{
+    height: calc(100% - 82px);
+    background-color: #2941ab;
+    background-image: url('./bursts.svg'); 
+     background-size: 170%;
+    background-position: 44% 4%;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centro{
+    width: 60%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    word-wrap:break-word;
+    font-weight: bold;
+    text-align: center;
+    color:#1ed760;
+    font-size:50px;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+.centro p{
+    text-align:center;
+    color:#1ed760;
+}
+
+.botao-dowload{
+    padding:15px 30px;
+    background-color:#1ed760 ;
+    border-radius:5rem;
+    font-size:14px;
+    text-decoration: none;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+
+.botao-dowload:hover{
+    transform:scale(1.1);    
+}
+
+.botao-dowload:active,.botao-dowload:focus{
+    border-color: #fff;
+}
+
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    height: 250px;
+    padding-bottom: 22px;
+}
+
+
+.footerGlobal{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+footer nav{
+    height: 230px;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footercontainer{
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer nav .rowLogo{
+    width:150px;
+    height: 100px;
+    /* max-width: 120px; */
+}
+
+.logoFooter{
+    width: 150px;
+}
+
+.redesSociais{
+    display:flex;
+    width:300px !important;;  
+    justify-content: space-around;
+}
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 12px;
+}
+
+.footercontainer{
+    display:flex;
+}
+
+.rowLogo a{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 2px;
+}
+
+.cinza{
+    color: gray;
+    font-weight: bold;
+}
+
+.conteudo nav ul li a{
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+}
+
+
+.redesSociais a:hover{
+    color: #1ed760;
+}
+
+.conteudo nav ul li{
+    margin-top:  20px;
+}
+@media(max-width:1200px){
+    .footerGlobal{
+        width: 80%;
+    }
+
+}
+
+@media(max-width:950px){
+    footer{
+        height: 900px;
+    }
+
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linksul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 215px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 600px;
+    }    
+}
+/* footerblobal media query
+
+
+
+
+
+
+        /* inline-flex pega 100% do conteudo */
